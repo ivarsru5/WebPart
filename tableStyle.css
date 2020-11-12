@@ -12,8 +12,45 @@ img{
 img:hover{
     border: 5px solid black;
 }
-div{
-   width: 100%;
+.red{
+   width: 0%;
    height: 100%;
-   background: red; 
+   background: yellowgreen; 
+}
+
+.toLeft{
+    position: relative;
+}
+
+.toLeft:hover div{
+    width: 100%;
+    animation: slideToRight 3s;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+@keyframes slideToRight{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+#field-email{
+    background: rgb(17, 15, 12);
+    padding: 5px;
+    border: 1px double #ffffff;
+    border-radius: 10px;
+}
+
+#field-email:focus{
+outline: none;
+background: rgb(17, 15, 12);
+}
+
+#field-email::placeholder{
+    color: crimson;
 }
